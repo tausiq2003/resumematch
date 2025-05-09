@@ -1,0 +1,101 @@
+import React from "react";
+import { Form, Input, Select, Button } from "antd";
+
+interface JobSearchFormProps {
+    onSearch: (values: {
+        region: string;
+        country: string;
+        position: string;
+        experienceLevel: string;
+        skills: string[];
+        educationLevel: string;
+    }) => void;
+}
+
+const JobSearchForm: React.FC<JobSearchFormProps> = ({ onSearch }) => {
+    const [form] = Form.useForm();
+
+    const handleSubmit = (values: {
+        region: string;
+        country: string;
+        position: string;
+        experienceLevel: string;
+        skills: string[];
+        educationLevel: string;
+    }) => {
+        onSearch(values);
+    };
+
+    return (
+        <Form
+            form={form}
+            onFinish={handleSubmit}
+            layout="vertical"
+            className="job-search-form"
+        >
+            <Form.Item
+                name="country"
+                label="Country"
+                rules={[{ required: true, message: "Please select a country" }]}
+            >
+                <Select placeholder="Select Country" defaultValue="india">
+                    <Select.Option value="india">India</Select.Option>
+                    <Select.Option value="lorem">Lorem</Select.Option>
+                    <Select.Option value="ipsum">Ipsum</Select.Option>
+                    <Select.Option value="dolor">Dolor</Select.Option>
+                </Select>
+            </Form.Item>
+
+            <Form.Item
+                name="region"
+                label="Region"
+                rules={[{ required: true, message: "Please select a region" }]}
+            >
+                <Select placeholder="Select Region" defaultValue="all">
+                    <Select.Option value="all">All</Select.Option>
+                    <Select.Option value="lorem">Lorem</Select.Option>
+                    <Select.Option value="ipsum">Ipsum</Select.Option>
+                    <Select.Option value="dolor">Dolor</Select.Option>
+                </Select>
+            </Form.Item>
+            <Form.Item
+                name="posted_since"
+                label="Since"
+                rules={[
+                    { required: true, message: "Please select an interval" },
+                ]}
+            >
+                <Select placeholder="Since" defaultValue="week">
+                    <Select.Option value="month">A month</Select.Option>
+                    <Select.Option value="week">A week</Select.Option>
+                    <Select.Option value="3days">3 days</Select.Option>
+                    <Select.Option value="today">1 day</Select.Option>
+                </Select>
+            </Form.Item>
+            <Form.Item
+                name="preferred_keywords"
+                label="Preferred Keywords(Comma separated values)"
+            >
+                <Input placeholder="web developer, senior manager" />
+            </Form.Item>
+            <Form.Item
+                name="excluded_keywords"
+                label="Excluded Keywords(Comma separated values)"
+            >
+                <Input placeholder="javascript, python" />
+            </Form.Item>
+
+            <Form.Item>
+                <Button
+                    type="primary"
+                    htmlType="submit"
+                    className="primary-color transition hover:primary-color hover:scale-105"
+                >
+                    Search Jobs
+                </Button>
+            </Form.Item>
+        </Form>
+    );
+};
+
+export default JobSearchForm;

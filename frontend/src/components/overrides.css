@@ -1,0 +1,17 @@
+/* Positioning the navigation dots on the left */
+
+
+#fp-nav ul li a span {
+  background-color: transparent;
+  border: 2px solid white;
+  width: 20px !important;
+  height: 20px !important;
+  margin: 0 !important;
+}
+
+#fp-nav ul li a.active span {
+  background: white !important;
+  border: 2px solid white !important;
+  margin: 0 !important;
+}
+

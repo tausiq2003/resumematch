@@ -1,0 +1,56 @@
+2025-05-08 18:59:19,121 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-05-08 18:59:19,121 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-08 18:59:23,718 - src.ranking - INFO - SentenceTransformer(
+  (0): Transformer({'max_seq_length': 256, 'do_lower_case': False}) with Transformer model: BertModel 
+  (1): Pooling({'word_embedding_dimension': 384, 'pooling_mode_cls_token': False, 'pooling_mode_mean_tokens': True, 'pooling_mode_max_tokens': False, 'pooling_mode_mean_sqrt_len_tokens': False, 'pooling_mode_weightedmean_tokens': False, 'pooling_mode_lasttoken': False, 'include_prompt': True})
+  (2): Normalize()
+)
+2025-05-08 18:59:24,212 - src.enhance_resume - INFO - Resume Enhancer initialized with Gemini API
+2025-05-08 18:59:24,283 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.182:5000
+2025-05-08 18:59:24,284 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-08 18:59:24,286 - werkzeug - INFO -  * Restarting with stat
+2025-05-08 18:59:34,463 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-05-08 18:59:34,463 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-08 18:59:38,683 - src.ranking - INFO - SentenceTransformer(
+  (0): Transformer({'max_seq_length': 256, 'do_lower_case': False}) with Transformer model: BertModel 
+  (1): Pooling({'word_embedding_dimension': 384, 'pooling_mode_cls_token': False, 'pooling_mode_mean_tokens': True, 'pooling_mode_max_tokens': False, 'pooling_mode_mean_sqrt_len_tokens': False, 'pooling_mode_weightedmean_tokens': False, 'pooling_mode_lasttoken': False, 'include_prompt': True})
+  (2): Normalize()
+)
+2025-05-08 18:59:39,137 - src.enhance_resume - INFO - Resume Enhancer initialized with Gemini API
+2025-05-08 18:59:39,149 - werkzeug - WARNING -  * Debugger is active!
+2025-05-08 18:59:39,150 - werkzeug - INFO -  * Debugger PIN: 480-538-525
+2025-05-08 18:59:44,612 - src.ats_scorer - INFO - ATS Resume Scorer initialized successfully
+2025-05-08 18:59:44,639 - src.ats_scorer - INFO - ATS Resume Scorer initialized successfully
+2025-05-08 18:59:45,174 - werkzeug - INFO - 127.0.0.1 - - [08/May/2025 18:59:45] "POST /analyze-resume HTTP/1.1" 200 -
+2025-05-08 18:59:45,174 - werkzeug - INFO - 127.0.0.1 - - [08/May/2025 18:59:45] "POST /analyze-resume HTTP/1.1" 200 -
+2025-05-08 19:01:28,628 - src.ats_scorer - INFO - ATS Resume Scorer initialized successfully
+2025-05-08 19:01:28,637 - src.ats_scorer - INFO - ATS Resume Scorer initialized successfully
+2025-05-08 19:01:29,374 - werkzeug - INFO - 127.0.0.1 - - [08/May/2025 19:01:29] "POST /analyze-resume HTTP/1.1" 200 -
+2025-05-08 19:01:29,419 - werkzeug - INFO - 127.0.0.1 - - [08/May/2025 19:01:29] "POST /analyze-resume HTTP/1.1" 200 -
+2025-05-08 21:07:08,967 - werkzeug - INFO -  * Detected change in '/home/tausiq/Personal/resume-match/backend2/src/ats_scorer.py', reloading
+2025-05-08 21:07:12,240 - werkzeug - INFO -  * Restarting with stat
+2025-05-08 21:07:24,608 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-05-08 21:07:24,608 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-08 21:07:29,002 - src.ranking - INFO - SentenceTransformer(
+  (0): Transformer({'max_seq_length': 256, 'do_lower_case': False}) with Transformer model: BertModel 
+  (1): Pooling({'word_embedding_dimension': 384, 'pooling_mode_cls_token': False, 'pooling_mode_mean_tokens': True, 'pooling_mode_max_tokens': False, 'pooling_mode_mean_sqrt_len_tokens': False, 'pooling_mode_weightedmean_tokens': False, 'pooling_mode_lasttoken': False, 'include_prompt': True})
+  (2): Normalize()
+)
+2025-05-08 21:07:29,512 - src.enhance_resume - INFO - Resume Enhancer initialized with Gemini API
+2025-05-08 21:07:29,522 - werkzeug - WARNING -  * Debugger is active!
+2025-05-08 21:07:29,524 - werkzeug - INFO -  * Debugger PIN: 480-538-525
+2025-05-09 11:30:42,066 - werkzeug - INFO -  * Detected change in '/home/tausiq/Personal/resume-match/backend2/src/ranking.py', reloading
+2025-05-09 11:30:44,980 - werkzeug - INFO -  * Restarting with stat
+2025-05-09 11:31:03,183 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-05-09 11:31:03,185 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-05-09 11:31:08,743 - src.ranking - INFO - SentenceTransformer(
+  (0): Transformer({'max_seq_length': 256, 'do_lower_case': False}) with Transformer model: BertModel 
+  (1): Pooling({'word_embedding_dimension': 384, 'pooling_mode_cls_token': False, 'pooling_mode_mean_tokens': True, 'pooling_mode_max_tokens': False, 'pooling_mode_mean_sqrt_len_tokens': False, 'pooling_mode_weightedmean_tokens': False, 'pooling_mode_lasttoken': False, 'include_prompt': True})
+  (2): Normalize()
+)
+2025-05-09 11:31:09,481 - src.enhance_resume - INFO - Resume Enhancer initialized with Gemini API
+2025-05-09 11:31:09,494 - werkzeug - WARNING -  * Debugger is active!
+2025-05-09 11:31:09,495 - werkzeug - INFO -  * Debugger PIN: 480-538-525
