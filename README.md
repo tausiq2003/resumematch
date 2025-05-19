@@ -1,0 +1,2 @@
+need to add clerk webhook to delete data from clerk, supabase, s3
+need to remove username from users table.
